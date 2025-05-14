@@ -1,5 +1,6 @@
 body {
     background-color: black;
+
 }
 
 .search-bar {
@@ -7,7 +8,7 @@ body {
 }
 
 img {
-    width: 300px;
+    width: 100%;
 }
 
 p {
@@ -16,14 +17,18 @@ p {
     margin-bottom: 0;
 }
 
-.container {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
-    width: 300px;
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
 }
 
 
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
 
 .heading {
     color: white;
@@ -41,21 +46,6 @@ p {
 
 .author {
     margin-bottom: 4px;
-}
-
-.logo-div,
-.description-div {
-    display: inline-block;
-    vertical-align: top;
-}
-
-
-.description-div {
-    width: 245px;
-}
-
-.logo-div {
-    width: 50px;
 }
 
 .logo {
