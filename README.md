@@ -89,16 +89,6 @@ youtube-ui-clone/
 
 ---
 
-## 🔮 Future Improvements
-
-- 🌙 Add **Dark Mode** toggle
-- 🧠 Implement **JavaScript-powered search**
-- 🎬 Build a **video player** page
-- 🎨 Add **animations** for smoother UI transitions
-- ♿ Improve **accessibility** (ARIA roles, keyboard nav)
-
----
-
 ## 📝 License
 
 This project is open source and available under the **MIT License**.
