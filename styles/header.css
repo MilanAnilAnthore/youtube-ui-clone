@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 16px;
     background-color: white;
     border-bottom: 1px solid rgb(202, 200, 200);
+    z-index: 100;
 }
 
 .left-section {
@@ -37,6 +37,7 @@
 .hamburgerIcon {
     width: 24px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .YouTube-Logo {
@@ -48,6 +49,7 @@
 .nav3 {
     width: 30px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .nav4 {
@@ -55,6 +57,7 @@
     height: 40px;
     border-radius: 50px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .search-bar::placeholder {
@@ -69,16 +72,41 @@
     border-radius: 40px 0 0 40px;
     padding-left: 18px;
     width: 0;
-
 }
+
 
 .search-button {
     border-radius: 0 40px 40px 0;
     border: 1px #d3d3d3 solid;
     background-color: #f8f8f8;
-
-
+    position: relative;
+    cursor: pointer;
 }
+
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-button .tooltip,
+.more-apps .tooltip,
+.notification-box .tooltip {
+    background-color: lightgray;
+    position: absolute;
+    font-family: "Roboto", "Arial";
+    font-size: 16px;
+    padding: 4px 9px;
+    bottom: -30px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.more-apps:hover .tooltip,
+.notification-box:hover .tooltip {
+    opacity: 1;
+}
+
 
 .voice-button {
     margin-left: 10px;

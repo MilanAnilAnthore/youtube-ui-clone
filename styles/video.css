@@ -1,8 +1,7 @@
 img {
     width: 100%;
+    border-radius: 10px;
 }
-
-
 
 .mainContainer {
     display: grid;
@@ -18,9 +17,27 @@ img {
     grid-template-columns: 50px 1fr;
 }
 
+@media (max-width:750px) {
+    .mainContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:750px) and (max-width:999px) {
+    .mainContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .mainContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .heading {
     color: black;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 12px;
@@ -39,4 +56,21 @@ img {
 .logo {
     width: 40px;
     border-radius: 50px;
+}
+
+.video-visual {
+    position: relative;
+}
+
+.duration {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(70, 69, 69);
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    right: 10px;
+    bottom: 13px;
+    padding: 4px 4px;
 }
